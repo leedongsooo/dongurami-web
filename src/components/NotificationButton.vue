@@ -1,5 +1,5 @@
 <template>
-    <div class="notification-button">
+    <div class="notification-button vibration">
         <span>새로운 알림</span>
         <div class="icon-wrapper">
             <i class="icon alram"></i>
@@ -29,6 +29,7 @@ export default {
     font-style: normal;
     width: 202px;
     height: 45px;
+    cursor: pointer;
     /* Adjust the width as necessary */
 }
 
@@ -54,5 +55,18 @@ export default {
     position: absolute;
     top: 0;
     right: -3px;
+}
+
+.notification-button.vibration:hover{
+    animation: vibration .1s infinite;
+}
+
+@keyframes vibration {
+    from {
+        transform: rotate(1deg);
+    }
+    to {
+        transform: rotate(-1deg);
+    }
 }
 </style>

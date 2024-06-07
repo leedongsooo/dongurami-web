@@ -6,7 +6,10 @@
         <NotificationButton />
         <SidebarMenu />
       </div>
-      <Dashboard/>
+      <div class="dashboard">
+        <ClubInfo/>
+        <Dashboard/>
+      </div>
     </div>
   </div>
 </template>
@@ -16,6 +19,7 @@ import Dashboard from './components/Dashboard.vue';
 import SidebarMenu from './components/SidebarMenu.vue';
 import HeadBar from './components/HeadBar.vue';
 import NotificationButton from './components/NotificationButton.vue'
+import ClubInfo from './components/ClubInfo.vue'
 
 export default {
   name: 'App',
@@ -24,6 +28,7 @@ export default {
     SidebarMenu,
     HeadBar,
     NotificationButton,
+    ClubInfo
   },
 };
 </script>
@@ -46,6 +51,11 @@ body {
 }
 
 .sidebar{
+  flex-direction: column;
+  display: flex;
+}
+
+.dashboard{
   flex-direction: column;
   display: flex;
 }

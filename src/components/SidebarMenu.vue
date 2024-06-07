@@ -13,17 +13,20 @@
         </div>
         <nav>
             <ul>
-                <li class="active">
+                <li class="1">
                     <i class="icon home"></i>
                     <p>홈 (회원관리)</p>
+                    <div></div>
                 </li>
-                <li>
+                <li class="2">
                     <i class="icon mail"></i>
                     <p>동아리 소개/모집</p>
+                    <div></div>
                 </li>
-                <li>
+                <li class="3">
                     <i class="icon clipboard"></i>
                     <p>공지사항</p>
+                    <div></div>
                 </li>
             </ul>
         </nav>
@@ -143,6 +146,15 @@ nav li:hover {
     background-color: #fff;
 }
 
+nav li:hover div{
+    background-color: #FFC700;
+}
+
+nav li div{
+    width: 7px;
+    height: 55px;
+}
+
 nav .icon {
     width: 20px;
     height: 20px;
@@ -162,7 +174,7 @@ nav .icon {
 }
 
 .empty{
-    height: 200px;
+    height: 210px;
 }
 
 .line1{
