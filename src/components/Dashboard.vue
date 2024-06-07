@@ -115,6 +115,7 @@ th:last-child{
     padding-right: 20px;
 }
 
+
 .Expulsion{
     background: #BF6F6F;
 }
