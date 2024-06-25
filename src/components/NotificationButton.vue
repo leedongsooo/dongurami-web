@@ -20,7 +20,7 @@ export default {
     align-items: center;
     justify-content: center;
     border-radius: 16px;
-    background: #353549;
+    background: #60C66A;
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.08);
     color: #fff;
     padding: 10px 20px;
@@ -50,7 +50,7 @@ export default {
 .red-dot {
     width: 6px;
     height: 6px;
-    background-color: red;
+    background-color: #FF0000;
     border-radius: 50%;
     position: absolute;
     top: 0;
